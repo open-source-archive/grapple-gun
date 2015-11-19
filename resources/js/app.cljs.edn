@@ -1,0 +1,3 @@
+{:require  [grapple-gun.app]
+ :init-fns [grapple-gun.app/init]
+ :compiler-options {:asset-path "js/app.out"}}

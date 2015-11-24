@@ -1,6 +1,13 @@
 language: java
+sudo: false
+addons:
+    apt:
+        packages:
+            - curl
 before_install:
-    - sudo apt-get update -qq
-    - sudo apt-get install -qq curl
-    - curl -L https://github.com/boot-clj/boot-bin/releases/download/2.4.2/boot.sh >./boot && chmod 755 ./boot
-script: ./boot test
+    - mkdir $PWD/script curl -L https://github.com/boot-clj/boot-bin/releases/download/2.4.2/boot.sh > script/boot && chmod 755 $PWD/script/boot
+    - export PATH=$PATH:$PWD/script/
+script: boot test
+
+
+mkdir $PWD/tmp && curl -L https://github.com/n1k0/casperjs/archive/1.0.2.tar.gz > tmp/casper.tar.gz

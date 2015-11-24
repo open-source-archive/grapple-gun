@@ -1,2 +1,6 @@
-language: clojure
+language: java
+before_install:
+    - sudo apt-get update -qq
+    - sudo apt-get install -qq curl
+    - curl -L https://github.com/boot-clj/boot-bin/releases/download/2.4.2/boot.sh >boot && chmod 755 boot
 script: boot test

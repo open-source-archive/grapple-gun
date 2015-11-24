@@ -9,5 +9,3 @@ before_install:
     - export PATH=$PATH:$PWD/script/
 script: boot test
 
-
-mkdir $PWD/tmp && curl -L https://github.com/n1k0/casperjs/archive/1.0.2.tar.gz > tmp/casper.tar.gz

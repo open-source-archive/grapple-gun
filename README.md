@@ -1,4 +1,5 @@
 # Grapple Gun
+[![Build Status](https://travis-ci.org/zalando-stups/grapple-gun.svg?branch=master)](https://travis-ci.org/zalando-stups/grapple-gun/)
 
 A toolbar to allow for seamless navigation between applications.
 To add it to your page, just include the javascript:
